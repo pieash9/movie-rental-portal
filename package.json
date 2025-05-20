@@ -2,16 +2,15 @@
   "name": "movie-rental-portal",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://pieash9.github.io/movie-rental-portal",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "gh-pages": "https://pieash9.github.io/movie-rental-portal",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://pieash9.github.io/movie-rental-portal"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
