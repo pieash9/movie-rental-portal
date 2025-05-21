@@ -5,6 +5,8 @@
   --color-dark: #171923;
   --color-light: #fff;
   --color-body: #1d1e28;
+
+  --darkMode: "class";
 }
 
 @utility container {
@@ -13,4 +15,8 @@
 
 button {
   cursor: pointer;
+}
+
+.dark {
+  @apply bg-[#171923] text-white;
 }
