@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #00d991;
+  --color-dark: #171923;
+  --color-light: #fff;
+  --color-body: #1d1e28;
+}
+
+@utility container {
+  @apply p-[1.25rem] mx-auto;
+}
