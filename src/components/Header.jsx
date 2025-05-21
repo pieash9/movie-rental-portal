@@ -2,11 +2,13 @@ import logo from "../assets/logo.svg";
 import ring from "../assets/ring.svg";
 import moon from "../assets/icons/moon.svg";
 import shoppingCart from "../assets/shopping-cart.svg";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import CartDetails from "../cine/CartDetails";
+import { MovieContext } from "../context";
 
 const Header = () => {
   const [showCart, setShowCart] = useState(false);
+  const { cartData } = useContext(MovieContext);
 
   const handleCartShow = () => {
     setShowCart(true);
@@ -48,6 +50,12 @@ const Header = () => {
                 height={24}
                 alt="Shopping Cart"
               />
+
+              {cartData.length > 0 && (
+                <span className="rounded-full absolute top-[-12px] left-[28px] bg-[#12CF6F] text-white text-center p-[2px] size-[30px]">
+                  {cartData.length}
+                </span>
+              )}
             </a>
           </li>
         </ul>

@@ -10,3 +10,7 @@
 @utility container {
   @apply p-[1.25rem] mx-auto;
 }
+
+button {
+  cursor: pointer;
+}
