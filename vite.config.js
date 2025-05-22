@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  // base: "/movie-rental-portal",
+  base:
+    import.meta.env.NODE_ENV === "production" ? "/movie-rental-portal/" : "/",
   plugins: [react(), tailwindcss()],
 });
